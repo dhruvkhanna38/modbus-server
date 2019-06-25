@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Modbus Server Data</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+                <div class="jumbotron">
+                        <h1>Data List </h1>
+                        
+                      </div>
+            <div class="container">
+                    <ul class="list-group">
+                            <% for(var i=0;i<foundData.length;i++){ %>
+                                <div class="well well-sm"> <li class="list-group-item"><a href="/serverData/<%=foundData[i].timeOfCreation%>"><%=foundData[i].date%></a></li></div>
+                             <% } %>
+                            </ul>
+            </div>
+        </div>
+    </body>
+    </html>
+        
